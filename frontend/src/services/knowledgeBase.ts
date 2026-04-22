@@ -30,7 +30,7 @@ interface ApiResponse<T> {
 
 export const knowledgeBaseApi = {
   list: async (): Promise<KnowledgeBase[]> => {
-    const response = await api.get<ApiResponse<KnowledgeBase[]>>('/knowledge-bases');
+    const response = await api.get<ApiResponse<KnowledgeBase[]>>('/knowledge-bases/');
     return (response as unknown as ApiResponse<KnowledgeBase[]>).data;
   },
 
@@ -40,7 +40,7 @@ export const knowledgeBaseApi = {
   },
 
   create: async (data: CreateKnowledgeBaseRequest): Promise<KnowledgeBase> => {
-    const response = await api.post<ApiResponse<KnowledgeBase>>('/knowledge-bases', data);
+    const response = await api.post<ApiResponse<KnowledgeBase>>('/knowledge-bases/', data);
     return (response as unknown as ApiResponse<KnowledgeBase>).data;
   },
 
