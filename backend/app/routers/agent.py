@@ -8,7 +8,7 @@ import httpx
 from app.services.storage import knowledge_base_storage, skill_config_storage
 from app.utils.logger import logger
 
-router = APIRouter(prefix="/api/agent", tags=["agent"])
+router = APIRouter(prefix="/agent", tags=["agent"])
 
 LLM_API_URL = "https://api.openai.com/v1/chat/completions"
 DEFAULT_MODEL = "gpt-4o-mini"

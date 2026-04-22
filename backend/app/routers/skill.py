@@ -13,7 +13,7 @@ from app.services.rag_service import rag_service
 from app.services.storage import skill_config_storage
 from app.utils.logger import logger
 
-router = APIRouter(prefix="/api/skill", tags=["skill"])
+router = APIRouter(prefix="/skill", tags=["skill"])
 
 
 def _load_skill_config() -> SkillConfig:

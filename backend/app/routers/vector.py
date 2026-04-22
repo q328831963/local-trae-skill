@@ -7,7 +7,7 @@ from app.services.advanced_chunker import advanced_chunker
 from app.utils.backup import backup_manager
 from app.utils.logger import logger
 
-router = APIRouter(prefix="/api/vectors", tags=["vectors"])
+router = APIRouter(prefix="/vectors", tags=["vectors"])
 
 
 def _kb_exists(kb_id: str) -> bool:

@@ -4,7 +4,7 @@ from app.services.chroma_service import chroma_service
 from app.services.storage import knowledge_base_storage, document_storage, storage
 from app.utils.logger import logger
 
-router = APIRouter(prefix="/api/system", tags=["system"])
+router = APIRouter(prefix="/system", tags=["system"])
 
 
 def _count_excel_documents() -> int:

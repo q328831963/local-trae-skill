@@ -18,7 +18,7 @@ from app.services.chroma_service import chroma_service
 from app.services.storage import document_storage, knowledge_base_storage, storage
 from app.utils.logger import logger
 
-router = APIRouter(prefix="/api/documents", tags=["documents"])
+router = APIRouter(prefix="/documents", tags=["documents"])
 
 
 def _parse_datetime(value):

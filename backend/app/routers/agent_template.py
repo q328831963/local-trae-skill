@@ -6,7 +6,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 from app.utils.logger import logger
 
-router = APIRouter(prefix="/api/agent-templates", tags=["agent-template"])
+router = APIRouter(prefix="/agent-template", tags=["agent-template"])
 
 
 class PromptTemplate(BaseModel):

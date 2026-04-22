@@ -24,7 +24,7 @@ from app.services.chroma_service import chroma_service
 from app.services.storage import knowledge_base_storage, storage, document_storage
 from app.utils.logger import logger
 
-router = APIRouter(prefix="/api/excel-doc", tags=["excel-documents"])
+router = APIRouter(prefix="/excel-doc", tags=["excel-documents"])
 
 EXCEL_DOC_TYPE = "excel"
 

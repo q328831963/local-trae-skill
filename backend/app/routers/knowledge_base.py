@@ -18,7 +18,7 @@ from app.services.kb_summary_service import (
 )
 from app.utils.logger import logger
 
-router = APIRouter(prefix="/api/knowledge-bases", tags=["knowledge-bases"])
+router = APIRouter(prefix="/knowledge-bases", tags=["knowledge-bases"])
 
 
 def _parse_datetime(value):

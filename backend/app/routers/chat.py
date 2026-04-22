@@ -11,7 +11,7 @@ from app.services.rag_service import rag_service
 from app.services.storage import skill_config_storage
 from app.utils.logger import logger
 
-router = APIRouter(prefix="/api/chat", tags=["chat"])
+router = APIRouter(prefix="/chat", tags=["chat"])
 
 LLM_API_URL = "https://api.openai.com/v1/chat/completions"
 DEFAULT_MODEL = "gpt-4o-mini"
