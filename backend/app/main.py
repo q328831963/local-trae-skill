@@ -76,7 +76,6 @@ async def global_exception_handler(request: Request, exc: Exception):
     )
 
 
-app.include_router(knowledge_base_router, prefix="/api")
 app.include_router(document_router, prefix="/api")
 app.include_router(vector_router, prefix="/api")
 app.include_router(skill_router, prefix="/api")
@@ -85,6 +84,7 @@ app.include_router(excel_doc_router, prefix="/api")
 app.include_router(chat_router, prefix="/api")
 app.include_router(agent_router, prefix="/api")
 app.include_router(agent_template_router, prefix="/api")
+app.include_router(knowledge_base_router, prefix="/api")
 
 
 @app.get("/")
